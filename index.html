@@ -19,7 +19,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css" integrity="sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4=" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
 
-<script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Pisces","darkmode":false,"version":"8.8.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js"></script>
+<script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Pisces","darkmode":false,"version":"8.8.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 <meta name="description" content="成为更好的自己">
 <meta property="og:type" content="website">
 <meta property="og:title" content="洋洋的流水账">
@@ -74,6 +74,7 @@
 
   <div class="site-nav-right">
     <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
     </div>
   </div>
 </div>
@@ -87,11 +88,37 @@
         <li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li>
         <li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a></li>
         <li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
   </ul>
 </nav>
 
 
 
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
 
 </div>
         
@@ -137,12 +164,12 @@
       </div>
       <div class="site-state-item site-state-categories">
           <a href="/categories/">
-        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-count">2</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
           <a href="/tags/">
-        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-count">4</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -185,7 +212,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2021/12/03/%E7%8B%AC%E7%99%BD/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/12/03/%E3%80%8A%E5%A2%9E%E5%80%BC%E7%A8%8E%E9%A2%84%E7%BC%B4%E7%A8%8E%E6%AC%BE%E8%A1%A8%E3%80%8B%E5%A6%82%E4%BD%95%E6%AD%A3%E7%A1%AE%E5%A1%AB%E6%8A%A5/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -198,7 +225,7 @@
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          <a href="/2021/12/03/%E7%8B%AC%E7%99%BD/" class="post-title-link" itemprop="url">独白</a>
+          <a href="/2021/12/03/%E3%80%8A%E5%A2%9E%E5%80%BC%E7%A8%8E%E9%A2%84%E7%BC%B4%E7%A8%8E%E6%AC%BE%E8%A1%A8%E3%80%8B%E5%A6%82%E4%BD%95%E6%AD%A3%E7%A1%AE%E5%A1%AB%E6%8A%A5/" class="post-title-link" itemprop="url">《增值税预缴税款表》如何正确填报</a>
         </h2>
 
         <div class="post-meta-container">
@@ -208,9 +235,8 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">发表于</span>
-      
 
-      <time title="创建时间：2021-12-03 00:12:18 / 修改时间：00:40:37" itemprop="dateCreated datePublished" datetime="2021-12-03T00:12:18+08:00">2021-12-03</time>
+      <time title="创建时间：2021-12-03 20:46:34" itemprop="dateCreated datePublished" datetime="2021-12-03T20:46:34+08:00">2021-12-03</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -218,11 +244,18 @@
       </span>
       <span class="post-meta-item-text">分类于</span>
         <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/%E7%94%9F%E6%B4%BB%E7%A2%8E%E7%89%87/" itemprop="url" rel="index"><span itemprop="name">生活碎片</span></a>
+          <a href="/categories/%E5%B7%A5%E4%BD%9C%E6%97%A5%E5%BF%97/" itemprop="url" rel="index"><span itemprop="name">工作日志</span></a>
         </span>
     </span>
 
   
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>1.9k</span>
+    </span>
 </div>
 
         </div>
@@ -232,10 +265,11 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <p>世界上真的有感同身受吗？很长一段时间，我都在怀疑。同学、朋友，甚至是你的至亲，有人真的了解你，愿意了解你吗？也许，没有真正的感同身受，只有冷暖自知。<br>我从小就是乖孩子，是老师口中的“品学兼优”，同学口中的好性格，亲戚口中的斯文安静，小时候，生活特别优待我，给了我无忧无虑的童年时光，就是这样的乖小孩，心里却有一个深藏多年的叛逆的秘密：
+          <blockquote>
+<p><em>表单说明</em><br><em>一、本表适用于纳税人发生以下情形按规定在<del>国税</del><code>（税务）</code>机关预缴增值税时填写。</em><br><em>（一）纳税人（不含其他个人）跨县（市）提供建筑服务。<code>（最常见情况）</code></em><br><em>（二）房地产开发企业<strong>预售</strong>自行开发的房地产项目。</em><br><em>（三）纳税人（不含其他个人）出租与机构所在地<strong>不在同一县（市）</strong>的不动产。</em>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/2021/12/03/%E7%8B%AC%E7%99%BD/#more" rel="contents">
+              <a class="btn" href="/2021/12/03/%E3%80%8A%E5%A2%9E%E5%80%BC%E7%A8%8E%E9%A2%84%E7%BC%B4%E7%A8%8E%E6%AC%BE%E8%A1%A8%E3%80%8B%E5%A6%82%E4%BD%95%E6%AD%A3%E7%A1%AE%E5%A1%AB%E6%8A%A5/#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
@@ -266,7 +300,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2021/12/02/hello-world/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/12/03/%E7%8B%AC%E7%99%BD/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -279,7 +313,7 @@
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          <a href="/2021/12/02/hello-world/" class="post-title-link" itemprop="url">Hello World</a>
+          <a href="/2021/12/03/%E7%8B%AC%E7%99%BD/" class="post-title-link" itemprop="url">独白</a>
         </h2>
 
         <div class="post-meta-container">
@@ -290,10 +324,26 @@
       </span>
       <span class="post-meta-item-text">发表于</span>
 
-      <time title="创建时间：2021-12-02 20:22:25" itemprop="dateCreated datePublished" datetime="2021-12-02T20:22:25+08:00">2021-12-02</time>
+      <time title="创建时间：2021-12-03 00:12:18" itemprop="dateCreated datePublished" datetime="2021-12-03T00:12:18+08:00">2021-12-03</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E7%94%9F%E6%B4%BB%E7%A2%8E%E7%89%87/" itemprop="url" rel="index"><span itemprop="name">生活碎片</span></a>
+        </span>
     </span>
 
   
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>3.9k</span>
+    </span>
 </div>
 
         </div>
@@ -303,20 +353,16 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
+          <p>世界上真的有感同身受吗？很长一段时间，我都在怀疑。同学、朋友，甚至是你的至亲，有人真的了解你，愿意了解你吗？也许，没有真正的感同身受，只有冷暖自知。</p>
+<p>我从小就是乖孩子，是老师口中的“品学兼优”，同学口中的好性格，亲戚口中的斯文安静，小时候，生活特别优待我，给了我无忧无虑的童年时光，就是这样的乖小孩，心里却有一个深藏多年的叛逆的秘密：
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2021/12/03/%E7%8B%AC%E7%99%BD/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -346,12 +392,10 @@
   &copy; 
   <span itemprop="copyrightYear">2021</span>
   <span class="with-love">
-    <i class="fa fa-heart"></i>
+    <i class="fas fa-fingerprint"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">洋洋</span>
 </div>
-  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/pisces/" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动
-  </div>
 
     </div>
   </footer>
@@ -361,6 +405,8 @@
 <script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script>
 
   
+<script src="https://cdn.jsdelivr.net/npm/hexo-generator-searchdb@1.4.0/dist/search.js" integrity="sha256-vXZMYLEqsROAXkEw93GGIvaB2ab+QW6w3+1ahD9nXXA=" crossorigin="anonymous"></script>
+<script src="/js/third-party/search/local-search.js"></script>
 
 
 
